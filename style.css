@@ -42,9 +42,9 @@
         .kurzrechner3{left: 300px ; top: 1000px;}
   
          @media (max-width: 630px ){
-        .kurzrechner1{left: 70px; }
-        .kurzrechner2{left: 70px; }
-        .kurzrechner3{left: 70px; top: 600px;}  }
+        .kurzrechner1{left: 50px;top: 50px; }
+        .kurzrechner2{left: 50px;top: 350px; }
+        .kurzrechner3{left: 50px; top: 600px;}  }
   
                    
            }
