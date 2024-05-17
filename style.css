@@ -27,6 +27,20 @@
       .rechner-mobil{
          50%
         }
+        .footer {
+          position: absolute;
+          left: 30px;
+        }
+        .Gutschein {
+        
+         color: black;
+        }
+       
+           
+          
+             
+               
+        
       
       @media (max-width: 1600px){
         .kurzrechner3{left: 800px;top: 100px;}
@@ -39,7 +53,7 @@
         .kurzrechner1{left: 300px;}  
         .kurzrechner2{left: 300px;top: 400px;  }
   
-        .kurzrechner3{left: 300px ; top: 1000px;}
+        .kurzrechner3{left: 300px ; top: 1050px;}
   
          @media (max-width: 630px ){
         .kurzrechner1{left: 50px;top: 50px; }
@@ -53,5 +67,8 @@
        .blau{
         color: #1a0497;
        }   
+       
+        
+       
   
          
