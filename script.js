@@ -12,3 +12,4 @@
     url(https://static.funnelcockpit.com/assets/fonts/quicksand-v7-latin-300.ttf) format("truetype"),
     url(https://static.funnelcockpit.com/assets/fonts/quicksand-v7-latin-300.svg#Quicksand) format("svg")
   }
+ 

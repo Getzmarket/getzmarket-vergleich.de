@@ -7,8 +7,28 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="script.js">
     <link rel="stylesheet" href="style.css">
-    </head>
+    
+    <script>
+      function toggleDropdown() {
+          document.getElementById("myDropdown").classList.toggle("show");
+      }
+  
+      // Schließt das Dropdown-Menü, wenn irgendwo außerhalb geklickt wird
+      window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              for (var i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                      openDropdown.classList.remove('show');
+                  }
+              }
+          }
+      }
+  </script>
+  </head>
       <body>
          <script src="style.css"></script>
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -24,20 +44,36 @@
        </div>
     </header>
     <div class="mdl-layout__drawer">
-        <nav class="mdl-navigation">
-      <div class="Option">
+      <nav class="mdl-navigation">
+        <div class="Option">
         <a class="mdl-navigation__link" href="https://a.check24.net/misc/click.php?pid=639897&aid=18&deep=stromanbieter-wechseln&cat=1" target="_blank"><h6 style="color: #1a0497;">Stromvergleich</h6></a>
         <a class="mdl-navigation__link" href="https://a.check24.net/misc/click.php?pid=639897&aid=18&deep=gasanbieter-wechseln&cat=3" target="_blank"><h6 style="color: #1a0497;">GAS</h6></a>
         <a class="mdl-navigation__link" href="https://a.check24.net/misc/click.php?pid=639897&aid=18&deep=dsl-anbieterwechsel&cat=4" target="_blank"><h6 style="color: #1a0497;">Internet</h6></a>
         <a class="mdl-navigation__link" href="https://a.check24.net/misc/click.php?pid=639897&aid=18&deep=handytarife&cat=7" target="_blank"><h6 style="color: #1a0497;">Mobilfunk</h6></a>
         <a class="mdl-navigation__link" href="https://a.partner-versicherung.de/click.php?partner_id=173258&ad_id=15&deep=kfz-versicherung" target="_blank"><h6 style="color: #1a0497;">KFZ-Versicherung</h6></a>
-       
-      </div>
-        <a href="https://a.check24.net/misc/click.php?pid=639897&aid=275&deep=oekostrom&cat=5" target="_blank"><img src="https://a.check24.net/misc/view.php?pid=639897&aid=275&cat=5" width="120" height="100" style="max-width: 100%; height: auto;" ></a>
-        <a href="https://a.check24.net/misc/click.php?pid=639897&aid=301&deep=stromanbieter-wechseln&cat=1" target="_blank"><img src="https://a.check24.net/misc/view.php?pid=639897&aid=301&cat=1" width="100" height="600" style="max-width: 100%; height:auto;" ></a>
-        
       </nav>
-    </div>
+      <div class="dropdown">
+        <h6 onclick="toggleDropdown()"class="dropbtn">Sachversicherungen</h6>
+        <ul id="myDropdown" class="dropdown-content">
+            <li><a href=https://a.partner-versicherung.de/click.php?partner_id=173258&ad_id=15&deep=haftpflichtversicherung target="_blank"><h6>Haftpflicht</h6></a></li>
+            <li><a href=https://a.partner-versicherung.de/click.php?partner_id=173258&ad_id=15&deep=hausratversicherung target="_blank"><h6>Hausrat</h6></a></li>
+            <li><a href=https://a.partner-versicherung.de/click.php?partner_id=173258&ad_id=15&deep=wohngebaeudeversicherung target="_blank"><h6>Wohngebäude</h6></a></li>
+            <li><a href=https://a.partner-versicherung.de/click.php?partner_id=173258&ad_id=15&deep=rechtsschutzversicherung target="_blank"><h6>Rechtschutz</h6></a></li>
+          </ul>
+      </div>
+      
+        <div class="miniBanner">
+           <li><a href="https://a.partner-versicherung.de/click.php?partner_id=173258&ad_id=15&deep=kredit"  target="_blank"><img src="https://a.partner-versicherung.de/view.php?partner_id=173258&ad_id=609" width="125" height="125" style="max-width: 100%; height: auto;"></a></li>
+           <li>
+           <a href="https://a.partner-versicherung.de/click.php?partner_id=173258&ad_id=623&deep=baufinanzierung"  target="_blank"><img src="https://a.partner-versicherung.de/view.php?partner_id=173258&ad_id=623" width="125" height="125" style="max-width: 100%; height: auto;"></a></li>
+           <img class="Logo" src="img/Logo.png " alt="">
+        </div>
+             
+      </div>
+      
+         
+    
+
     <main class="mdl-layout__content">
       <div class="page-content">
        <img class="Haus-Bild" src="img/Haus.jpg" alt="">
@@ -62,6 +98,7 @@
           <a href="https://a.check24.net/misc/click.php?pid=639897&aid=314&deep=gasanbieter-wechseln&cat=3" target="_blank"><img src="https://a.check24.net/misc/view.php?pid=639897&aid=314&cat=3" width="234" height="60" style="max-width: 100%; height: auto;" ></a>
         <a href="https://a.check24.net/misc/click.php?pid=639897&aid=18&deep=gasanbieter-wechseln&cat=3" target="_blank"><img src="https://a.check24.net/misc/view.php?pid=639897&aid=240&cat=5" width="234" height="60" style="max-width: 100%; height: auto;" ></a>
         <a href="https://a.check24.net/misc/click.php?pid=639897&aid=18&deep=dsl-anbieterwechsel&cat=4" target="_blank"><img src="https://a.check24.net/misc/view.php?pid=639897&aid=102&cat=4" width="234" height="60" style="max-width: 100%; height: auto;" ></a>
+        <a href="https://a.check24.net/misc/click.php?pid=639897&aid=170&deep=handytarife&cat=7" target="_blank"><img src="https://a.check24.net/misc/view.php?pid=639897&aid=170&cat=7" width="234" height="60" style="max-width: 100%; height: auto;" ></a>
           <div class="container"><div class="row"><div class="col-md-2-4"></div><div class="col-md-7-2">
               <div id="element-pkgBhXuF" class="button" style="text-align:center"><a target="_top" style="font-size:28px;background-color:;color:#0c0a0a;border-radius:4px;border-width:0;padding-bottom:0;font-weight:bold" class="btn btn-lg">
               <span class="btn-content">STROM, GAS &amp; DSL</span></a>
@@ -77,11 +114,13 @@
      <a href = "https://a.check24.net/misc/click.php?pid=639897&aid=18&cat=13&deep=?voucher=URLAUB" target="_blank"><h4 class="Gutschein">!!!   <i>50€ Gutschein Ferienhaus.de </i>   !!!</h4></a>
      <a href="https://a.check24.net/misc/click.php?pid=639897&aid=18&deep=pauschalreisen-vergleich&cat=9" target="_blank"><img src="https://a.check24.net/misc/view.php?pid=639897&aid=255&cat=9" width="234" height="60" style="max-width: 70%; height: auto;" ></a>
      <a href="https://a.check24.net/misc/click.php?pid=639897&aid=18&cat=13" target="_blank"><img src="https://a.check24.net/misc/view.php?pid=639897&aid=331&cat=13" width="500" height="300" style="max-width: 100%; height: auto;"></a>
-
+     <script src="https://www.anrdoezrs.net/am/101187868/include/allCj/generate/onLoad/impressions/page/am.js"></script>
 </body>
 <p><strong><h6>CHECK24.net Partnerprogramm / TARIFCHECK24 GmbH Partnerprogramm / Ferienhaus.de Partnerprogramm </h6></strong></p>
 <footer>
+  
     <div class="footer">
+     
       <a href="http://files.check24.net/ads/113/agb-datenschutz.php" target="_blank">AGB</a>
       <a href="impressum/Imressum.html"target="_blank">Impressum</a>
       <a href="https://www.check24-partnerprogramm.de/?pid=639897" target="_blank"> Partner werden</a>
