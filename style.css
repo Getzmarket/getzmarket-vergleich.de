@@ -13,7 +13,7 @@
   
     display: flex;
     }
-    
+  
   
     
   
@@ -66,6 +66,7 @@
     .dropdown-content a:hover {
         background-color: #d1c2c2;
     }
+    
     .show {
         display: block;
         list-style: none;
