@@ -82,12 +82,13 @@
    
 
       @media (max-width: 1600px){
-        .kurzrechner3{left: 800px;top: 100px;}
+        .kurzrechner3{left: 900px;top: 100px;}
   
        .kurzrechner2{ left: 500px;top: 100px}
+       .kurzrechner1{left: 150px;top: 100px; }
   
   
-        @media (max-width: 1100px){
+        @media (max-width: 1200px){
   
         .kurzrechner1{left: 300px;}  
         .kurzrechner2{left: 300px;top: 400px;  }
@@ -95,9 +96,14 @@
         .kurzrechner3{left: 300px ; top: 1050px;}
   
          @media (max-width: 630px ){
-        .kurzrechner1{left: 50px;top: 50px; }
-        .kurzrechner2{left: 50px;top: 350px; }
-        .kurzrechner3{left: 50px; top: 600px;}  }
+        .kurzrechner1{left: 50px;top: 20px; }
+        .kurzrechner2{left: 50px;top: 280px; }
+        .kurzrechner3{left: 50px; top: 620px;}  }
+
+        @media (max-width: 500px ){
+          .kurzrechner1{left: 50px;top: 10px; }
+          .kurzrechner2{left: 50px;top: 250px; }
+          .kurzrechner3{left: 50px; top: 600px;}  }
   
                    
            }
